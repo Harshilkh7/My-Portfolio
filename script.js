@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
       nav.classList.toggle("active"); // Toggle the 'active' class
     });
   
-    // Optional: Add smooth scrolling for anchor links
+    //Added smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener("click", function(e) {
         e.preventDefault();

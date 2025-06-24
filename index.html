@@ -24,7 +24,7 @@
           </ul>
         </nav>
         <h1>Welcome to My Portfolio</h1>
-        <button id="theme-toggle">Switch Theme</button>
+         <button id="theme-toggle" aria-label="Toggle Light/Dark Theme">Switch Theme</button>
       </header>
       
 
@@ -36,11 +36,59 @@
         </span>
     </section>
 
-    <section id="projects">
+    <!-- <section id="projects">
       <h2>Projects</h2>
-      <p>Here are some of the projects I've worked on:</p>
       <div id="project-list"></div>
-    </section>
+    </section> -->
+
+    <!-- <section id="projects">
+      <h2>Projects</h2>
+      
+      <div class="project">
+    <p>Here are some of the projects I've worked on:</p>
+    <h3>Extens-Pro – Permission Tracker Chrome Extension</h3>
+    <p>
+      A Chrome extension built with JavaScript and Manifest V3 to manage access to sensitive browser APIs like geolocation, clipboard, and notifications. Features include API blocking/spoofing and real-time UI updates with a modular architecture. Improves browser privacy and control.
+    </p>
+    <a href="https://github.com/Harshilkh7/extens-pro" target="_blank">View on GitHub</a>
+  </div>
+
+  <div class="project">
+    <h3>Focus Bubble – Productivity Chrome Extension</h3>
+    <p>
+      A distraction-blocking Chrome extension using customizable DOM selectors to hide ads, popups, and comments. Includes dark mode, notepad, AI assistant, ambient music, and real-time article/YouTube summarization using MutationObserver. Built with persistent state via Chrome Storage API.
+    </p>
+    <a href="https://github.com/Harshilkh7/focus-bubble" target="_blank">View on GitHub</a>
+  </div>
+</section> -->
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project-cards">
+
+    <div class="card">
+      <h3>Extens-Pro</h3>
+      <p>A Chrome extension to manage geolocation, clipboard, and notification permissions. Features spoofing, blocking, and a modular UI with real-time feedback. Built using JavaScript & Manifest V3.</p>
+      <a href="https://github.com/Harshilkh7/chrome-extension-permission-tracker" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="card">
+      <h3>Focus Bubble</h3>
+      <p>A productivity-focused Chrome extension that blocks distractions like ads and comments. Includes toggles for dark mode, music, notepad, and AI assistant. Built with DOM selectors and Chrome Storage API.</p>
+      <a href="https://github.com/Harshilkh7/focus-bubble-extension" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="card">
+      <h3>My Portfolio</h3>
+      <!-- <iframe src="https://harshilkh7.github.io/My-Portfolio/" frameborder="0"></iframe> -->
+      <p>This is my personal portfolio showcasing my skills, projects, and background as a web developer. Built with HTML, CSS, and JavaScript.</p>
+      <a href="https://github.com/Harshilkh7/My-Portfolio" target="_blank">View on GitHub</a>
+    </div>
+
+  </div>
+</section>
+
+
 
     <section id="contact">
       <h2>Contact Me</h2>

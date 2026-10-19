@@ -1,92 +1,169 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <meta name="theme-color" content="#0b0d10">
+  <meta name="description" content="Harshil Khandelwal — software developer building thoughtful full-stack products, real-time experiences, and AI-powered tools.">
+  <title>Harshil Khandelwal — Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-
 </head>
 <body>
-    <header>
-        <nav>
-          <div id="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-        <h1>Welcome to My Portfolio</h1>
-         <button id="theme-toggle" aria-label="Toggle Light/Dark Theme">Switch Theme</button>
-      </header>
-      
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Harshil Khandelwal home"><span class="brand-mark">H<span>.</span></span><span class="brand-name">HARSHIL KHANDELWAL</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#work">Work</a><a href="#about">About</a><a href="#stack">Stack</a><a href="#achievements">Highlights</a>
+      <a class="nav-cta" href="#contact">Let's talk <span>↗</span></a>
+    </nav>
+  </header>
 
   <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <span id="typing-effect">
-      <!-- <p>Hi, I'm Harshil Khandelwal, a web developer passionate about creating beautiful and functional websites.</p> -->
-        </span>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> OPEN TO SOFTWARE ENGINEERING OPPORTUNITIES</p>
+        <h1>I build things<br>for the <span class="accent">real world.</span></h1>
+        <p class="hero-description">I'm Harshil — a software developer and engineering student at MANIT Bhopal. I turn complex problems into useful products, from real-time collaborative tools to AI-powered data experiences.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore my work <span>↘</span></a>
+          <a class="button button-quiet" href="mailto:harshilk310@gmail.com">Get in touch <span>↗</span></a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/Harshilkh7" target="_blank" rel="noreferrer">GITHUB <span>↗</span></a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LINKEDIN <span>↗</span></a>
+          <span class="hero-location"><span class="location-dot"></span> BHOPAL, INDIA</span>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Decorative abstract code visual">
+        <div class="visual-grid"></div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+        <div class="core"><span>H<span class="core-period">.</span></span><small>BUILD / SHIP / LEARN</small></div>
+        <span class="float-tag tag-code">{"code": "craft"}</span>
+        <span class="float-tag tag-stack">FULL-STACK · GENAI</span>
+        <span class="visual-index">IND / 23—27</span>
+      </div>
+      <div class="hero-bottom"><span>SCROLL TO EXPLORE</span><span class="scroll-line"></span><span>01 — 04</span></div>
     </section>
 
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="project-cards">
+    <section class="work-section section-wrap" id="work">
+      <div class="section-heading">
+        <div><p class="eyebrow">SELECTED WORK <span class="heading-dash">/</span> 2025—26</p><h2>Projects with<br><span class="muted-title">purpose.</span></h2></div>
+        <p class="section-intro">A few things I've designed, built, debugged, and shipped — each one a chance to solve a different kind of problem.</p>
+      </div>
+      <div class="project-list">
+        <article class="project-card project-featured">
+          <div class="project-meta"><span>01 / COLLABORATION</span><span class="project-status"><i></i> FULL-STACK APP</span></div>
+          <div class="project-layout">
+            <div class="project-content">
+              <h3>DevSync<span class="title-period">.</span></h3>
+              <p class="project-subtitle">A shared space to think, code, and build together.</p>
+              <p class="project-description">A real-time collaborative coding workspace with project and file management, messaging, an in-browser development environment, and AI-assisted coding workflows.</p>
+              <div class="tag-list"><span>React</span><span>Node.js</span><span>Socket.IO</span><span>Redis</span><span>WebContainer</span><span>Gemini</span></div>
+              <div class="project-links"><a href="https://github.com/Harshilkh7" target="_blank" rel="noreferrer">SOURCE CODE <span>↗</span></a><span class="link-divider">/</span><a href="#contact">ASK ME ABOUT IT <span>↗</span></a></div>
+            </div>
+            <div class="project-art devsync-art" aria-hidden="true">
+              <div class="editor-window">
+                <div class="window-bar"><span></span><span></span><span></span><b>devsync / workspace</b></div>
+                <div class="editor-body"><div class="editor-sidebar"><i></i><i></i><i></i><i></i></div><div class="code-lines"><span class="code-muted">01</span><span class="code-purple">const</span> <span class="code-blue">workspace</span> = {<br><span class="code-muted">02</span>&nbsp;&nbsp;realtime: <span class="code-green">true</span>,<br><span class="code-muted">03</span>&nbsp;&nbsp;creators: [<span class="code-orange">"you"</span>, <span class="code-orange">"team"</span>],<br><span class="code-muted">04</span>&nbsp;&nbsp;ideas: <span class="code-green">"in sync"</span><br><span class="code-muted">05</span>};<br><span class="code-cursor"></span></div><div class="collab-cursor cursor-a">A</div><div class="collab-cursor cursor-b">H</div></div>
+                <div class="editor-footer"><span><i></i> All changes saved</span><span>2 collaborators online</span></div>
+              </div>
+              <div class="art-note">BUILD TOGETHER, FROM ANYWHERE.</div>
+            </div>
+          </div>
+        </article>
 
-    <div class="card">
-      <h3>Extens-Pro</h3>
-      <p>A Chrome extension to manage geolocation, clipboard, and notification permissions. Features spoofing, blocking, and a modular UI with real-time feedback. Built using JavaScript & Manifest V3.</p>
-      <a href="https://github.com/Harshilkh7/chrome-extension-permission-tracker" target="_blank">View on GitHub</a>
-    </div>
+        <article class="project-card">
+          <div class="project-meta"><span>02 / PRIVACY ENGINEERING</span><span class="project-status"><i></i> BROWSER + DASHBOARD</span></div>
+          <div class="project-layout">
+            <div class="project-content">
+              <h3>ExtensPro<span class="title-period">.</span></h3>
+              <p class="project-subtitle">Make browser permissions visible and understandable.</p>
+              <p class="project-description">A Chrome extension and live dashboard that monitors website permissions, streams activity, and adds contextual privacy-risk insights with AI.</p>
+              <div class="tag-list"><span>Manifest V3</span><span>JavaScript</span><span>React</span><span>Socket.IO</span><span>MongoDB</span></div>
+              <div class="project-links"><a href="https://github.com/Harshilkh7/chrome-extension-permission-tracker" target="_blank" rel="noreferrer">SOURCE CODE <span>↗</span></a><span class="link-divider">/</span><a href="#contact">ASK ME ABOUT IT <span>↗</span></a></div>
+            </div>
+            <div class="project-art privacy-art" aria-hidden="true">
+              <div class="privacy-panel">
+                <div class="privacy-top"><span class="shield-icon">⌑</span><div><b>Privacy overview</b><small>LIVE PERMISSION MONITOR</small></div><span class="live-pill"><i></i> LIVE</span></div>
+                <div class="privacy-score"><div><small>PRIVACY PULSE</small><b>Monitoring <span>active</span></b></div><div class="score-ring"><span>●</span></div></div>
+                <div class="permission-row"><span class="permission-icon">⌖</span><span>Location access</span><b class="permission-off">BLOCKED</b></div>
+                <div class="permission-row"><span class="permission-icon">◉</span><span>Camera & microphone</span><b class="permission-on">MONITORED</b></div>
+                <div class="permission-row"><span class="permission-icon">▤</span><span>Clipboard activity</span><b class="permission-on">MONITORED</b></div>
+              </div><span class="privacy-glow"></span>
+            </div>
+          </div>
+        </article>
 
-    <div class="card">
-      <h3>Focus Bubble</h3>
-      <p>A productivity-focused Chrome extension that blocks distractions like ads and comments. Includes toggles for dark mode, music, notepad, and AI assistant. Built with DOM selectors and Chrome Storage API.</p>
-      <a href="https://github.com/Harshilkh7/focus-bubble-extension" target="_blank">View on GitHub</a>
-    </div>
+        <article class="project-card">
+          <div class="project-meta"><span>03 / GENERATIVE AI</span><span class="project-status"><i></i> DATA + LLM</span></div>
+          <div class="project-layout">
+            <div class="project-content">
+              <h3>DataPilot<span class="title-period">.</span></h3>
+              <p class="project-subtitle">Ask your data a question. Get an answer.</p>
+              <p class="project-description">A conversational analytics platform that translates natural language into SQL with schema-aware retrieval, validation guardrails, query execution, and result summaries.</p>
+              <div class="tag-list"><span>Node.js</span><span>LangGraph.js</span><span>Gemini</span><span>ChromaDB</span><span>SQL</span></div>
+              <div class="project-links"><a href="https://github.com/Harshilkh7/data-pilot" target="_blank" rel="noreferrer">SOURCE CODE <span>↗</span></a><span class="link-divider">/</span><a href="#contact">ASK ME ABOUT IT <span>↗</span></a></div>
+            </div>
+            <div class="project-art datapilot-art" aria-hidden="true">
+              <div class="query-card"><div class="query-label"><span class="query-spark">✳</span> ASK DATAPILOT</div><p>Show the highest-spending customers this quarter</p><div class="query-send">↗</div></div>
+              <div class="result-card"><div class="result-header"><span><i></i> QUERY RESULTS</span><span>SQL · GENERATED</span></div><div class="result-cols"><span>CUSTOMER</span><span>ORDERS</span><span>TOTAL SPEND</span></div><div class="result-row"><b>Northstar Labs</b><span>42</span><strong>$18,420</strong></div><div class="result-row"><b>Studio North</b><span>36</span><strong>$14,860</strong></div><div class="result-row"><b>Fieldwork Co.</b><span>29</span><strong>$12,150</strong></div><div class="result-footer"><span>Illustrative interface preview</span><span>03 ROWS ↗</span></div></div>
+              <span class="data-orb orb-one"></span><span class="data-orb orb-two"></span>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="more-work"><span>ALWAYS BUILDING SOMETHING NEW</span><a href="https://github.com/Harshilkh7" target="_blank" rel="noreferrer">EXPLORE GITHUB <span>↗</span></a></div>
+    </section>
 
-    <div class="card">
-      <h3>My Portfolio</h3>
-      <!-- <iframe src="https://harshilkh7.github.io/My-Portfolio/" frameborder="0"></iframe> -->
-      <p>This is my personal portfolio showcasing my skills, projects, and background as a web developer. Built with HTML, CSS, and JavaScript.</p>
-      <a href="https://github.com/Harshilkh7/My-Portfolio" target="_blank">View on GitHub</a>
-    </div>
+    <section class="about-section section-wrap" id="about">
+      <div class="about-top"><p class="eyebrow">A LITTLE ABOUT ME <span class="heading-dash">/</span> 02</p><h2>Curiosity first.<br><span class="muted-title">Engineering always.</span></h2></div>
+      <div class="about-grid">
+        <div class="about-copy"><p class="big-copy">I'm an Electrical Engineering undergrad at <span>MANIT Bhopal</span> who found a passion for building software that feels both useful and well-crafted.</p><p>I enjoy working across the stack — designing APIs, building responsive interfaces, shaping data systems, and exploring how AI can make software more helpful. I care about understanding the problem before reaching for a solution.</p><p>Outside of projects, competitive programming keeps me sharp and teaches me to approach hard problems one constraint at a time.</p><a class="text-link" href="mailto:harshilk310@gmail.com">HAVE A GOOD PROBLEM? LET'S TALK <span>↗</span></a></div>
+        <div class="about-facts">
+          <div class="fact-row"><span class="fact-number">01</span><div><small>EDUCATION</small><b>B.Tech · Electrical Engineering</b><p>MANIT Bhopal · 2023—2027</p></div></div>
+          <div class="fact-row"><span class="fact-number">02</span><div><small>MY APPROACH</small><b>Build, measure, improve.</b><p>Iterative by nature, detail-oriented by choice.</p></div></div>
+          <div class="fact-row"><span class="fact-number">03</span><div><small>WHAT I LIKE SOLVING</small><b>Real-time systems & AI products</b><p>Tools that make complex workflows feel simple.</p></div></div>
+        </div>
+      </div>
+    </section>
 
-  </div>
-</section>
+    <section class="stack-section section-wrap" id="stack">
+      <div class="section-heading"><div><p class="eyebrow">TOOLS OF THE TRADE <span class="heading-dash">/</span> 03</p><h2>My working<br><span class="muted-title">toolkit.</span></h2></div><p class="section-intro">A practical stack for taking an idea from first commit to a working product.</p></div>
+      <div class="stack-grid">
+        <div class="stack-cell"><span class="stack-index">01</span><span class="stack-icon">⌘</span><h3>Frontend</h3><p>React · JavaScript · HTML · Tailwind CSS</p></div>
+        <div class="stack-cell"><span class="stack-index">02</span><span class="stack-icon">↔</span><h3>Backend</h3><p>Node.js · Express · REST APIs · Socket.IO</p></div>
+        <div class="stack-cell"><span class="stack-index">03</span><span class="stack-icon">▤</span><h3>Data & storage</h3><p>MongoDB · PostgreSQL · MySQL · SQLite · Redis</p></div>
+        <div class="stack-cell"><span class="stack-index">04</span><span class="stack-icon">✳</span><h3>AI & retrieval</h3><p>Gemini · RAG · LangGraph · ChromaDB</p></div>
+        <div class="stack-cell"><span class="stack-index">05</span><span class="stack-icon">⌁</span><h3>Engineering</h3><p>C/C++ · DSA · OOP · DBMS · Operating Systems</p></div>
+        <div class="stack-cell"><span class="stack-index">06</span><span class="stack-icon">⤴</span><h3>Workflow</h3><p>Git · GitHub · VS Code · Render</p></div>
+      </div>
+    </section>
 
+    <section class="achievement-section section-wrap" id="achievements">
+      <div class="section-heading"><div><p class="eyebrow">MILESTONES <span class="heading-dash">/</span> 04</p><h2>Progress, not<br><span class="muted-title">perfection.</span></h2></div><p class="section-intro">A few milestones from hackathons, academics, and the competitive programming grind.</p></div>
+      <div class="achievement-grid">
+        <div class="achievement-card achievement-main"><span class="achievement-mark">↗</span><small>HACKATHONS</small><strong>SIH '25</strong><p>Finalist · Smart India Hackathon 2025</p><span class="achievement-line"></span></div>
+        <div class="achievement-card"><span class="achievement-mark">#1</span><small>ACADEMICS</small><strong>College Rank 1</strong><p>Naukri Campus EROH 2024</p></div>
+        <div class="achievement-card"><span class="achievement-mark">102</span><small>CODECHEF</small><strong>Global Rank 102</strong><p>Starters 187 · Div. 3 · 20,000+ participants</p></div>
+        <div class="achievement-card"><span class="achievement-mark">700<span>+</span></span><small>PROBLEM SOLVING</small><strong>Consistency compounds</strong><p>Problems solved across GFG, LeetCode, CodeChef & Codeforces</p></div>
+      </div>
+      <div class="ratings-strip"><span>CODECHEF <b>1672 · 3★</b></span><span>CODEFORCES <b>1262 · PUPIL</b></span><span>JOURNEY <b>ALWAYS IN PROGRESS</b></span></div>
+    </section>
 
-
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" placeholder="Your Name" required>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="Your Email" required>
-        
-        <label for="message">Message:</label>
-        <textarea id="message" placeholder="Your Message"></textarea>
-        
-        <button type="submit">Send</button>
-      </form>
+    <section class="contact-section section-wrap" id="contact">
+      <p class="eyebrow">HAVE SOMETHING IN MIND? <span class="heading-dash">/</span> SAY HELLO</p>
+      <h2>Let's make<br><span class="accent">it happen.</span></h2>
+      <p class="contact-copy">Whether it's an opportunity, a collaboration, or a problem worth solving — I'm happy to connect.</p>
+      <a class="contact-email" href="mailto:harshilk310@gmail.com">harshilk310@gmail.com <span>↗</span></a>
+      <div class="contact-bottom"><a href="https://github.com/Harshilkh7" target="_blank" rel="noreferrer">GITHUB <span>↗</span></a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LINKEDIN <span>↗</span></a><a href="mailto:harshilk310@gmail.com">EMAIL <span>↗</span></a></div>
     </section>
   </main>
 
-  <footer>
-    <p>© 2025 Harshil Khandelwal. All rights reserved.</p>
-  </footer>
-
-  <div id="starry-background"></div>
-
+  <footer class="site-footer"><a class="footer-brand" href="#home">H<span>.</span></a><span>DESIGNED & BUILT BY HARSHIL KHANDELWAL</span><a href="#home">BACK TO TOP ↑</a><span>© <span id="year">2026</span></span></footer>
   <script src="script.js"></script>
 </body>
 </html>
